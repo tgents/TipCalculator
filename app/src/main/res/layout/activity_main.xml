@@ -26,6 +26,11 @@
         android:text="Tip:" />
 
 
+    <!--
+    Inside LinearLayout, if you use 0dp for layout_width, you can set a weight for each element.
+    If they are all the same weight, then they will have equal space in the layout.
+    If they have different weights, then the larger weight will take more space.
+    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

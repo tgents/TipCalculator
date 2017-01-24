@@ -33,16 +33,18 @@ public class MainActivity extends AppCompatActivity {
         ten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num = Integer.parseInt(input.getText().toString());
-                answer.setText("Tip: " + (num * .1));
+                double num = Integer.parseInt(input.getText().toString());
+                double calculated = (num * .1);
+                answer.setText("Tip: " + calculated);
             }
         });
 //        ten.setOnClickListener(new MyListener(.1));
         fifteen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int num = Integer.parseInt(input.getText().toString());
-                answer.setText("Tip: " + (num * .15));
+                double num = Integer.parseInt(input.getText().toString());
+                double calculated = (num * .15);
+                answer.setText("Tip: " + calculated);
             }
         });
 //        fifteen.setOnClickListener(new MyListener(.15));
@@ -51,12 +53,13 @@ public class MainActivity extends AppCompatActivity {
         // both setOnClickListeners should work for twenty
         // this demos the custom listener I made
         twenty.setOnClickListener(new MyListener(.2));
-        
+
 //        twenty.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                int num = Integer.parseInt(input.getText().toString());
-//                answer.setText("Tip: " + (num * .2));
+//                double num = Integer.parseInt(input.getText().toString());
+//                double calculated = (num * .2);
+//                answer.setText("Tip: " + calculated);
 //            }
 //        });
     }
@@ -73,8 +76,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            int num = Integer.parseInt(input.getText().toString());
-            answer.setText("Tip: " + (num * tip));
+            double num = Integer.parseInt(input.getText().toString());
+            double calculated = (num * tip);
+            answer.setText("Tip: " + calculated);
+
         }
     }
 }
